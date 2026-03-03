@@ -1,0 +1,15 @@
+{
+  "originHash" : "096bb89d514c11aa352add36a5017a2911055f211e0a0da10d6290e5601f9d1e",
+  "pins" : [
+    {
+      "identity" : "featurevisor-swift2",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/featurevisor/featurevisor-swift2.git",
+      "state" : {
+        "revision" : "0b647e732b4edc42847858c429650c41f0a0d6ec",
+        "version" : "0.1.0"
+      }
+    }
+  ],
+  "version" : 3
+}
