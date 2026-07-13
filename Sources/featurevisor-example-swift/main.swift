@@ -6,8 +6,8 @@ let datafileURL = URL(string: "https://featurevisor-example-cloudflare.pages.dev
 let data = try Data(contentsOf: datafileURL)
 let datafileContent = try DatafileContent.fromData(data)
 
-let f = createInstance(
-    InstanceOptions(
+let f = createFeaturevisor(
+    FeaturevisorOptions(
         datafile: datafileContent,
         context: [
             "userId": .string("123"),
