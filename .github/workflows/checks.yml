@@ -15,6 +15,7 @@ concurrency:
 
 jobs:
   checks:
+    name: Swift 6.3.3
     runs-on: macos-latest
     timeout-minutes: 15
 
@@ -23,15 +24,17 @@ jobs:
         uses: actions/checkout@v7
 
       - name: Set up Swift
-        uses: swift-actions/setup-swift@v2.4.0
+        uses: swift-actions/setup-swift@v3
         with:
-          swift-version: "6.2.1"
+          swift-version: "6.3.3"
 
-      - name: Install dependencies
-        run: swift package resolve
+      - name: Resolve dependencies
+        run: |
+          swift package resolve
+          git diff --exit-code -- Package.resolved
 
       - name: Build
-        run: swift build
+        run: swift build --configuration release
 
       - name: Run application
-        run: swift run featurevisor-example-swift
+        run: swift run --configuration release featurevisor-example-swift

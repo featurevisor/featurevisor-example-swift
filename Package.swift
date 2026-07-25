@@ -7,7 +7,7 @@ let package = Package(
         .macOS(.v13)
     ],
     dependencies: [
-        .package(url: "https://github.com/featurevisor/featurevisor-swift2.git", from: "1.0.0")
+        .package(url: "https://github.com/featurevisor/featurevisor-swift2.git", from: "2.0.0")
     ],
     targets: [
         .executableTarget(

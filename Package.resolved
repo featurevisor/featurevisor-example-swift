@@ -1,13 +1,22 @@
 {
-  "originHash" : "036cbc1c84e755eb1e3932eb044fa57855a37899f71c2656460df8a2cff3c51e",
+  "originHash" : "1d40c660165563431a3b609eb0396e8004451ffb9c408196507046458059a1b5",
   "pins" : [
     {
       "identity" : "featurevisor-swift2",
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/featurevisor/featurevisor-swift2.git",
       "state" : {
-        "revision" : "bb982c7c0a9f5ab501e48ba0e68c19358506ac23",
-        "version" : "1.0.0"
+        "revision" : "eb550035a6b16b200fca5498824bcc4dd022f5d0",
+        "version" : "2.0.0"
+      }
+    },
+    {
+      "identity" : "swift-sdk",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/open-feature/swift-sdk.git",
+      "state" : {
+        "revision" : "d71686219a65ab78f77923ceb0e2ea549e1e50ef",
+        "version" : "0.5.0"
       }
     }
   ],
