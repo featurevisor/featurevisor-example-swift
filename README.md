@@ -8,7 +8,7 @@ It fetches a production datafile, creates a Featurevisor instance with customer 
 
 ## Requirements
 
-Swift 6.0 or newer.
+Swift 6.1 or newer.
 
 ## Run the example
 
